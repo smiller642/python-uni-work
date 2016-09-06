@@ -1,0 +1,7 @@
+#no .a files
+*.a
+
+#Ignore online materials folder and ipnb checkpoints
+.ipynb_checkpoints/
+automate_online-materials/
+Invent\ with\ python/
