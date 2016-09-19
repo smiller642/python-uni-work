@@ -14,7 +14,7 @@ outputFile = open('ProxyDataset.csv', 'w', newline='')
 writer = csv.writer(outputFile)
 # Write out the top row
 writer.writerow(['Version', 'Protocol', 'TTL', 'SrcAddr', 'DestAddr',
-                 'SrcPort', 'DestPort', 'SeqNum', 'AckNum', 'Flag' 'dataSize',
+                 'SrcPort', 'DestPort', 'SeqNum', 'AckNum', 'Flag', 'dataSize',
                  'Service', 'Label'])
 # receive a packet
 while True:
@@ -81,6 +81,7 @@ while True:
                              str(dest_port), str(sequence),
                              str(acknowledgement), Flag,
                              str(data_size), "HTTP", "1"])
+            print("Packet Captured")
         else:
             writer.writerow([str(version), str(protocol),
                              str(ttl), str(s_addr),
@@ -88,5 +89,5 @@ while True:
                              str(dest_port), str(sequence),
                              str(acknowledgement), Flag,
                              str(data_size), "HTTPS", "1"])
-    print("Packet Captured")
+            print("Packet Captured")
 outputFile.close()
