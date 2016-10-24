@@ -10,7 +10,7 @@ try:
 except socket.error:
     print('Socket could not be created.')
     sys.exit()
-outputFile = open('proxylelouetfr.csv', 'w', newline='')
+outputFile = open('proxycap.csv', 'w', newline='')
 writer = csv.writer(outputFile)
 # Write out the top row
 writer.writerow(['Version', 'Protocol', 'TTL', 'SrcAddr', 'DestAddr',
