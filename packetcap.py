@@ -10,7 +10,7 @@ try:
 except socket.error:
     print('Socket could not be created.')
     sys.exit()
-outputFile = open('proxycap.csv', 'w', newline='')
+outputFile = open('Nonproxycap.csv', 'w', newline='')
 writer = csv.writer(outputFile)
 # Write out the top row
 writer.writerow(['Version', 'Protocol', 'TTL', 'SrcAddr', 'DestAddr',
@@ -80,7 +80,7 @@ while True:
                              str(d_addr), str(source_port),
                              str(dest_port), str(sequence),
                              str(acknowledgement), Flag,
-                             str(data_size), "HTTP", "1"])
+                             str(data_size), "HTTP", "0"])
             print("Packet Captured")
         else:
             writer.writerow([str(version), str(protocol),
@@ -88,6 +88,6 @@ while True:
                              str(d_addr), str(source_port),
                              str(dest_port), str(sequence),
                              str(acknowledgement), Flag,
-                             str(data_size), "HTTPS", "1"])
+                             str(data_size), "HTTPS", "0"])
             print("Packet Captured")
 outputFile.close()
