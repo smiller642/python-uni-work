@@ -1,0 +1,27 @@
+Cross Validation Results,,,,
+Neural Network,Value,,Bayes Point Machine,Value
+Mean Accuracy,0.97,,Mean Accuracy,0.67
+Mean Precsion,0.97,,Mean Precsion,0.71
+Mean Recall,0.97,,Mean Recall,0.58
+Mean F-Score,0.97,,Mean F-Score,0.64
+Mean AUC,0.99,,Mean AUC,0.69
+Mean Average Log Loss,0.079,,Mean Average Log Loss,0.59
+Mean Training Log Loss,88.56,,Mean Training Log Loss,14.37
+,,,,
+Averaged Perceptron,Value,,Logistic Regression,Value
+Mean Accuracy,0.66,,Mean Accuracy,0.67
+Mean Precsion,0.69,,Mean Precsion,0.7
+Mean Recall,0.603,,Mean Recall,0.58
+Mean F-Score,0.64,,Mean F-Score,0.64
+Mean AUC,0.702,,Mean AUC,0.69
+Mean Average Log Loss,0.59,,Mean Average Log Loss,0.59
+Mean Training Log Loss,14.11,,Mean Training Log Loss,14.3
+,,,,
+Support Vector Machine,Value,,Boosted Decision Tree,Value
+Mean Accuracy,0.65,,Mean Accuracy,1
+Mean Precsion,0.66,,Mean Precsion,1
+Mean Recall,0.61,,Mean Recall,1
+Mean F-Score,0.63,,Mean F-Score,1
+Mean AUC,0.68,,Mean AUC,1
+Mean Average Log Loss,0.61,,Mean Average Log Loss,0.000392
+Mean Training Log Loss,11.89,,Mean Training Log Loss,99.94
